@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: block;
+	margin: auto;
+	width: 50%;
+}
+    @font-face {
+        font-family: 'meeraregular';
+        font-style: normal;
+        font-weight: 250;
+        src: url(https://smc.org.in/downloads/fonts/meera/Meera.woff2?v=7.0) format('woff2'), url(https://smc.org.in/downloads/fonts/meera/Meera.woff?v=7.0) format('woff'), url(https://smc.org.in/downloads/fonts/meera/Meera.ttf?v=7.0) format('truetype');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+0D01-0D7F, U+200C-U+200D, U+25CC;
+      }
+
+.container{
+    /* width: 800px; */
+    height: 100vh;
+    max-width: 800px;
+    margin: auto;
+   
+}
+/* header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 871px;
+}
+header a{
+    color: white;
+
+} */
+
+.wrapper img{
+    width: 100%;
+}
+
+
+.wrapper{
+    
+    display: grid;
+    grid-template-columns: 20% 30% 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr;
+    /* grid-gap: 30px; */
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.wrapper .section1{
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+}
+.wrapper .section2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.wrapper .section3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    background: darkgray;
+}
+.section1 img{
+    margin-top: 60px;
+}
+.section4 img{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 18px ; 
+}
+.section5{
+    justify-content: center;
+    /* margin-top: 43px; */
+} 
+
+.section5 p{
+    line-height: 31px;
+    font-size: 12px;
+}
+.section5 a{
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+    margin: 0 0 0 339px;
+    padding: 3px 5px 3px 5px;
+} 
+.section5 :hover{
+    background: red;
+}
+
+.section6 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+.section3 h2{
+    transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  float: right;
+  writing-mode: tb-rl;
+  color: white;
+  text-align: center;
+  font-family: serif;
+  padding-bottom: 44px;
+  font-size: 100px;
+  margin-left: 29px;
+}
+
+ .section7 a{
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+    margin: 0 0 0 339px;
+    padding: 3px 5px 3px 5px;
+ }
+ .section7 :hover{
+     background: red;
+ }
+ .section7 p{
+    line-height: 31px;
+    font-size: 12px;
+ }
+ .section8 img{
+     width: 100%;
+     height: 100%;
+     border-radius: 18px ; 
+ }
+ .section9 a{
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+    margin: 0 0 0 339px;
+    padding: 3px 5px 3px 5px;
+    
+ }
+ .section9 :hover {
+     background: red;
+ }
+ .section9 p{
+    line-height: 31px;
+    font-size: 12px;
+}
+
+
+.section10{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.section12{ 
+    
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.section12 .table {
+    text-align: center; 
+    width: 100%;
+    height: 100%;
+    border: 1px thin black;
+}
+.section12 .table td{
+    background:lightgrey;
+}
+/* .section11{ 
+    
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    height: 10%;
+} */
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background:#403d3d;
+}
+.footer p{
+    text-align: center;
+    margin: 10px;
+    /* color: white; */
+}
+.footer a{
+    color: black;}
+/* .footer .line{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    /* padding: 0; */
+@media(max-width:767px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "section1"   "section2"
+                              "section4"   "section5" 
+                              "section6"   "section7"
+                              "section8"   "section9"
+                              "section10"  "section10"
+                              "section12"  "section12"
+                              "footer"     "footer";
+    } 
+}
